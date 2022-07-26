@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Mochiy+Pop+One&family=Uchen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Mochiy Pop One';
+}
+
+header {
+    background-image: url('./pokemonLogo.png');
+    background-color: rgb(255, 255, 255, 0);
+    width: 100%;
+    height: 23rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body,
+html {
+    background: url('./backgroundPoke.jpg') center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#listaPokes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+    gap: 5rem;
+    padding: 3rem 0;
+}
+
+.cardPoke {
+    display: flex;
+    gap: 0.4rem;
+    background-color: rgb(0, 110, 255, 0.5);
+    width: 455px;
+    height: 360px;
+    border-radius: 10%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(255, 230, 0, 0.801);
+}
+
+.pokeName {
+    margin: 1rem;
+    text-align: center;
+    color: rgba(255, 230, 0, 0.801);
+    text-transform: capitalize;
+}
+
+.pokeNumber {
+    color: rgba(255, 230, 0, 0.801);
+    text-align: center;
+}
+
+.pokeType {
+    color: rgb(0, 110, 255, 1);
+    text-align: center;
+    background: rgb(255, 230, 0, 0.6);
+    transition: 0.8s;
+    margin: 6px;
+    position: relative;
+    text-transform: capitalize;
+    border-radius: 45%;
+}
+
+.descriptionTitle {
+    text-align: center;
+    color: rgba(255, 230, 0, 0.801);
+    font-weight: bold;
+}
+
+.descriptionText {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.pokeImage {
+    width: 14.5rem;
+    height: 14.5rem;
+}
+
+footer {
+    background-color: rgb(0, 0, 0, 0.5);
+    color: rgba(255, 230, 0, 0.801);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
